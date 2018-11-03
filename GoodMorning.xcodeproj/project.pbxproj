@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF75FB76218E1D6000EDBB52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75FB75218E1D6000EDBB52 /* AppDelegate.swift */; };
+		EF75FB78218E1D6000EDBB52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75FB77218E1D6000EDBB52 /* ViewController.swift */; };
+		EF75FB7B218E1D6000EDBB52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF75FB79218E1D6000EDBB52 /* Main.storyboard */; };
+		EF75FB7D218E1D6100EDBB52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF75FB7C218E1D6100EDBB52 /* Assets.xcassets */; };
+		EF75FB80218E1D6100EDBB52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF75FB7E218E1D6100EDBB52 /* LaunchScreen.storyboard */; };
+		EF75FB8B218E1D6100EDBB52 /* GoodMorningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75FB8A218E1D6100EDBB52 /* GoodMorningTests.swift */; };
+		EF75FB96218E1D6100EDBB52 /* GoodMorningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75FB95218E1D6100EDBB52 /* GoodMorningUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF75FB87218E1D6100EDBB52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF75FB6A218E1D6000EDBB52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF75FB71218E1D6000EDBB52;
+			remoteInfo = GoodMorning;
+		};
+		EF75FB92218E1D6100EDBB52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF75FB6A218E1D6000EDBB52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF75FB71218E1D6000EDBB52;
+			remoteInfo = GoodMorning;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF75FB72218E1D6000EDBB52 /* GoodMorning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodMorning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF75FB75218E1D6000EDBB52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF75FB77218E1D6000EDBB52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF75FB7A218E1D6000EDBB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF75FB7C218E1D6100EDBB52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF75FB7F218E1D6100EDBB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF75FB81218E1D6100EDBB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF75FB86218E1D6100EDBB52 /* GoodMorningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodMorningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF75FB8A218E1D6100EDBB52 /* GoodMorningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodMorningTests.swift; sourceTree = "<group>"; };
+		EF75FB8C218E1D6100EDBB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF75FB91218E1D6100EDBB52 /* GoodMorningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodMorningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF75FB95218E1D6100EDBB52 /* GoodMorningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodMorningUITests.swift; sourceTree = "<group>"; };
+		EF75FB97218E1D6100EDBB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF75FB6F218E1D6000EDBB52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF75FB83218E1D6100EDBB52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF75FB8E218E1D6100EDBB52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF75FB69218E1D6000EDBB52 = {
+			isa = PBXGroup;
+			children = (
+				EF75FB74218E1D6000EDBB52 /* GoodMorning */,
+				EF75FB89218E1D6100EDBB52 /* GoodMorningTests */,
+				EF75FB94218E1D6100EDBB52 /* GoodMorningUITests */,
+				EF75FB73218E1D6000EDBB52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF75FB73218E1D6000EDBB52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF75FB72218E1D6000EDBB52 /* GoodMorning.app */,
+				EF75FB86218E1D6100EDBB52 /* GoodMorningTests.xctest */,
+				EF75FB91218E1D6100EDBB52 /* GoodMorningUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF75FB74218E1D6000EDBB52 /* GoodMorning */ = {
+			isa = PBXGroup;
+			children = (
+				EF75FB75218E1D6000EDBB52 /* AppDelegate.swift */,
+				EF75FB77218E1D6000EDBB52 /* ViewController.swift */,
+				EF75FB79218E1D6000EDBB52 /* Main.storyboard */,
+				EF75FB7C218E1D6100EDBB52 /* Assets.xcassets */,
+				EF75FB7E218E1D6100EDBB52 /* LaunchScreen.storyboard */,
+				EF75FB81218E1D6100EDBB52 /* Info.plist */,
+			);
+			path = GoodMorning;
+			sourceTree = "<group>";
+		};
+		EF75FB89218E1D6100EDBB52 /* GoodMorningTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF75FB8A218E1D6100EDBB52 /* GoodMorningTests.swift */,
+				EF75FB8C218E1D6100EDBB52 /* Info.plist */,
+			);
+			path = GoodMorningTests;
+			sourceTree = "<group>";
+		};
+		EF75FB94218E1D6100EDBB52 /* GoodMorningUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF75FB95218E1D6100EDBB52 /* GoodMorningUITests.swift */,
+				EF75FB97218E1D6100EDBB52 /* Info.plist */,
+			);
+			path = GoodMorningUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF75FB71218E1D6000EDBB52 /* GoodMorning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF75FB9A218E1D6100EDBB52 /* Build configuration list for PBXNativeTarget "GoodMorning" */;
+			buildPhases = (
+				EF75FB6E218E1D6000EDBB52 /* Sources */,
+				EF75FB6F218E1D6000EDBB52 /* Frameworks */,
+				EF75FB70218E1D6000EDBB52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoodMorning;
+			productName = GoodMorning;
+			productReference = EF75FB72218E1D6000EDBB52 /* GoodMorning.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF75FB85218E1D6100EDBB52 /* GoodMorningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF75FB9D218E1D6100EDBB52 /* Build configuration list for PBXNativeTarget "GoodMorningTests" */;
+			buildPhases = (
+				EF75FB82218E1D6100EDBB52 /* Sources */,
+				EF75FB83218E1D6100EDBB52 /* Frameworks */,
+				EF75FB84218E1D6100EDBB52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF75FB88218E1D6100EDBB52 /* PBXTargetDependency */,
+			);
+			name = GoodMorningTests;
+			productName = GoodMorningTests;
+			productReference = EF75FB86218E1D6100EDBB52 /* GoodMorningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF75FB90218E1D6100EDBB52 /* GoodMorningUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF75FBA0218E1D6100EDBB52 /* Build configuration list for PBXNativeTarget "GoodMorningUITests" */;
+			buildPhases = (
+				EF75FB8D218E1D6100EDBB52 /* Sources */,
+				EF75FB8E218E1D6100EDBB52 /* Frameworks */,
+				EF75FB8F218E1D6100EDBB52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF75FB93218E1D6100EDBB52 /* PBXTargetDependency */,
+			);
+			name = GoodMorningUITests;
+			productName = GoodMorningUITests;
+			productReference = EF75FB91218E1D6100EDBB52 /* GoodMorningUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF75FB6A218E1D6000EDBB52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Esha Madhekar";
+				TargetAttributes = {
+					EF75FB71218E1D6000EDBB52 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EF75FB85218E1D6100EDBB52 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EF75FB71218E1D6000EDBB52;
+					};
+					EF75FB90218E1D6100EDBB52 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EF75FB71218E1D6000EDBB52;
+					};
+				};
+			};
+			buildConfigurationList = EF75FB6D218E1D6000EDBB52 /* Build configuration list for PBXProject "GoodMorning" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF75FB69218E1D6000EDBB52;
+			productRefGroup = EF75FB73218E1D6000EDBB52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF75FB71218E1D6000EDBB52 /* GoodMorning */,
+				EF75FB85218E1D6100EDBB52 /* GoodMorningTests */,
+				EF75FB90218E1D6100EDBB52 /* GoodMorningUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF75FB70218E1D6000EDBB52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF75FB80218E1D6100EDBB52 /* LaunchScreen.storyboard in Resources */,
+				EF75FB7D218E1D6100EDBB52 /* Assets.xcassets in Resources */,
+				EF75FB7B218E1D6000EDBB52 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF75FB84218E1D6100EDBB52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF75FB8F218E1D6100EDBB52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF75FB6E218E1D6000EDBB52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF75FB78218E1D6000EDBB52 /* ViewController.swift in Sources */,
+				EF75FB76218E1D6000EDBB52 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF75FB82218E1D6100EDBB52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF75FB8B218E1D6100EDBB52 /* GoodMorningTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF75FB8D218E1D6100EDBB52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF75FB96218E1D6100EDBB52 /* GoodMorningUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF75FB88218E1D6100EDBB52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF75FB71218E1D6000EDBB52 /* GoodMorning */;
+			targetProxy = EF75FB87218E1D6100EDBB52 /* PBXContainerItemProxy */;
+		};
+		EF75FB93218E1D6100EDBB52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF75FB71218E1D6000EDBB52 /* GoodMorning */;
+			targetProxy = EF75FB92218E1D6100EDBB52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF75FB79218E1D6000EDBB52 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF75FB7A218E1D6000EDBB52 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF75FB7E218E1D6100EDBB52 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF75FB7F218E1D6100EDBB52 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF75FB98218E1D6100EDBB52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF75FB99218E1D6100EDBB52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF75FB9B218E1D6100EDBB52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoodMorning/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hello.GoodMorning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF75FB9C218E1D6100EDBB52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoodMorning/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hello.GoodMorning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF75FB9E218E1D6100EDBB52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoodMorningTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hello.GoodMorningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodMorning.app/GoodMorning";
+			};
+			name = Debug;
+		};
+		EF75FB9F218E1D6100EDBB52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoodMorningTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hello.GoodMorningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodMorning.app/GoodMorning";
+			};
+			name = Release;
+		};
+		EF75FBA1218E1D6100EDBB52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoodMorningUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hello.GoodMorningUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoodMorning;
+			};
+			name = Debug;
+		};
+		EF75FBA2218E1D6100EDBB52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoodMorningUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hello.GoodMorningUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoodMorning;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF75FB6D218E1D6000EDBB52 /* Build configuration list for PBXProject "GoodMorning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF75FB98218E1D6100EDBB52 /* Debug */,
+				EF75FB99218E1D6100EDBB52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF75FB9A218E1D6100EDBB52 /* Build configuration list for PBXNativeTarget "GoodMorning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF75FB9B218E1D6100EDBB52 /* Debug */,
+				EF75FB9C218E1D6100EDBB52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF75FB9D218E1D6100EDBB52 /* Build configuration list for PBXNativeTarget "GoodMorningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF75FB9E218E1D6100EDBB52 /* Debug */,
+				EF75FB9F218E1D6100EDBB52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF75FBA0218E1D6100EDBB52 /* Build configuration list for PBXNativeTarget "GoodMorningUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF75FBA1218E1D6100EDBB52 /* Debug */,
+				EF75FBA2218E1D6100EDBB52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF75FB6A218E1D6000EDBB52 /* Project object */;
+}
