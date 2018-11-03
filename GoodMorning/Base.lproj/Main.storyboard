@@ -17,27 +17,85 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7KQ-hs-ztt">
+                                <rect key="frame" x="67" y="67" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bx0-7r-8lh">
+                                <rect key="frame" x="16" y="293" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="ArK-1s-G59"/>
+                                </constraints>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="didTapAddButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="ayT-7N-eVv"/>
+                                    <segue destination="Uz4-xc-mbz" kind="popoverPresentation" popoverAnchorView="bx0-7r-8lh" id="Fxd-uc-JnR">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRJ-DD-bqw">
+                                <rect key="frame" x="16" y="231" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3CY-iv-atj"/>
+                                </constraints>
+                                <state key="normal" title="Generate"/>
+                                <connections>
+                                    <action selector="didTapGenButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qyb-9L-G8X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQg-GE-Nt9">
+                                <rect key="frame" x="16" y="355" width="343" height="40"/>
+                                <state key="normal" title="My Closet"/>
+                                <connections>
+                                    <action selector="didTapMyClosetButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="ydg-VN-VKA"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bx0-7r-8lh" secondAttribute="trailing" constant="16" id="073-nA-C2j"/>
+                            <constraint firstItem="bx0-7r-8lh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0nq-uQ-PKS"/>
+                            <constraint firstItem="bx0-7r-8lh" firstAttribute="height" secondItem="VRJ-DD-bqw" secondAttribute="height" id="1hN-AA-Ux3"/>
+                            <constraint firstItem="VRJ-DD-bqw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="211" id="A1D-Zy-ZVn"/>
+                            <constraint firstItem="pQg-GE-Nt9" firstAttribute="centerX" secondItem="VRJ-DD-bqw" secondAttribute="centerX" id="G8m-q8-d4Q"/>
+                            <constraint firstItem="bx0-7r-8lh" firstAttribute="centerX" secondItem="VRJ-DD-bqw" secondAttribute="centerX" id="JgH-jc-cU4"/>
+                            <constraint firstItem="pQg-GE-Nt9" firstAttribute="height" secondItem="VRJ-DD-bqw" secondAttribute="height" id="Lcn-wZ-nlP"/>
+                            <constraint firstItem="bx0-7r-8lh" firstAttribute="width" secondItem="VRJ-DD-bqw" secondAttribute="width" id="R3H-dG-EKs"/>
+                            <constraint firstItem="pQg-GE-Nt9" firstAttribute="width" secondItem="VRJ-DD-bqw" secondAttribute="width" id="Rup-kB-AVT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VRJ-DD-bqw" secondAttribute="trailing" constant="16" id="SXO-Mm-tA8"/>
+                            <constraint firstItem="bx0-7r-8lh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Twj-fl-ooC"/>
+                            <constraint firstItem="VRJ-DD-bqw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qDY-EH-iwR"/>
+                            <constraint firstItem="pQg-GE-Nt9" firstAttribute="top" secondItem="bx0-7r-8lh" secondAttribute="bottom" constant="22" id="qNl-f6-mFc"/>
+                            <constraint firstItem="bx0-7r-8lh" firstAttribute="top" secondItem="VRJ-DD-bqw" secondAttribute="bottom" constant="22" id="sNT-pf-XKH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="bx0-7r-8lh" id="xOH-Mo-o7x"/>
+                        <outlet property="generateButton" destination="VRJ-DD-bqw" id="U59-Im-zho"/>
+                        <outlet property="myClosetButton" destination="pQg-GE-Nt9" id="eCG-Fy-OiK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="118.29085457271366"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="sDl-hT-CkS">
+        <scene sceneID="qjL-Eg-tww">
             <objects>
-                <viewController id="pTk-7a-m63" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wQ3-ch-Zek">
+                <viewController id="Uz4-xc-mbz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E8h-l3-880">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="0f5-22-zbH"/>
+                        <viewLayoutGuide key="safeArea" id="CLQ-g3-KyL"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5jJ-yu-jaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iTW-1u-xL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="133"/>
+            <point key="canvasLocation" x="825" y="118"/>
         </scene>
     </scenes>
 </document>
