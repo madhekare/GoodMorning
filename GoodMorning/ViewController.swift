@@ -23,8 +23,7 @@ class ViewController: UIViewController {
     }
     
     
-<<<<<<< HEAD
-=======
+
     @IBAction func didTapGenButton() {
         NSLog("Gen")
     }
@@ -35,7 +34,7 @@ class ViewController: UIViewController {
     @IBAction func didTapMyClosetButton(){
         NSLog("closet")
     }
->>>>>>> 9453c515f76791ef5964cf01a65ad7c8641fed4a
+
     func setupCaptureSession() {
         
         // creates a new capture session
