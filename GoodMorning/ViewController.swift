@@ -15,8 +15,44 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        setupCaptureSession()
     }
+    
+    
+    
+    func setupCaptureSession() {
+        
+        // creates a new capture session
+        let captureSession = AVCaptureSession()
+        
+        // search for available capture devices
+        let availableDevices = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: .back).devices
+        
+        
+        
+        // get capture device, add device input to capture session
+        do {
+            if let captureDevice = availableDevices.first {
+                let captureDeviceInput = try AVCaptureDeviceInput(device: captureDevice)
+                
+                captureSession.addInput(captureDeviceInput)
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        // setup output, add output to our capture session
+        let captureOutput = AVCaptureVideoDataOutput()
+        captureSession.addOutput(captureOutput)
+        
+        let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+        previewLayer.frame = view.frame
+        view.layer.addSublayer(previewLayer)
+        
+        captureSession.startRunning()
+        
 
+    }
 
 }
 
