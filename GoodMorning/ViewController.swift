@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     }
     
     
-    
     func setupCaptureSession() {
         
         // creates a new capture session

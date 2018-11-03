@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE89D48A218E365E00B53EF2 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EE89D489218E365E00B53EF2 /* Inceptionv3.mlmodel */; };
+		EE89D4C6218E4B6200B53EF2 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE89D4C5218E4B6200B53EF2 /* test.swift */; };
 		EF75FB76218E1D6000EDBB52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75FB75218E1D6000EDBB52 /* AppDelegate.swift */; };
 		EF75FB78218E1D6000EDBB52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75FB77218E1D6000EDBB52 /* ViewController.swift */; };
 		EF75FB7B218E1D6000EDBB52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF75FB79218E1D6000EDBB52 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE89D489218E365E00B53EF2 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		EE89D4C5218E4B6200B53EF2 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		EF75FB72218E1D6000EDBB52 /* GoodMorning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodMorning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF75FB75218E1D6000EDBB52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF75FB77218E1D6000EDBB52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 				EF75FB89218E1D6100EDBB52 /* GoodMorningTests */,
 				EF75FB94218E1D6100EDBB52 /* GoodMorningUITests */,
 				EF75FB73218E1D6000EDBB52 /* Products */,
+				EE89D489218E365E00B53EF2 /* Inceptionv3.mlmodel */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +108,7 @@
 				EF75FB7C218E1D6100EDBB52 /* Assets.xcassets */,
 				EF75FB7E218E1D6100EDBB52 /* LaunchScreen.storyboard */,
 				EF75FB81218E1D6100EDBB52 /* Info.plist */,
+				EE89D4C5218E4B6200B53EF2 /* test.swift */,
 			);
 			path = GoodMorning;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF75FB78218E1D6000EDBB52 /* ViewController.swift in Sources */,
+				EE89D4C6218E4B6200B53EF2 /* test.swift in Sources */,
+				EE89D48A218E365E00B53EF2 /* Inceptionv3.mlmodel in Sources */,
 				EF75FB76218E1D6000EDBB52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
