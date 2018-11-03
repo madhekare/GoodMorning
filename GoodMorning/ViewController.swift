@@ -12,14 +12,27 @@ import Vision
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var generateButton: UIButton!
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var myClosetButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        setupCaptureSession()
+//        setupCaptureSession()
     }
     
     
+    @IBAction func didTapGenButton() {
+        NSLog("Gen")
+    }
+    @IBAction func didTapAddButton() {
+        NSLog("added")
+    }
     
+    @IBAction func didTapMyClosetButton(){
+        NSLog("closet")
+    }
     func setupCaptureSession() {
         
         // creates a new capture session
