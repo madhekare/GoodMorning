@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -25,7 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 //    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+<<<<<<< HEAD
 //
+=======
+>>>>>>> 979c187d93bea5c7ec39b461d4bfec34f9a0a1c7
 //        // Override point for customization after application launch.
 //        return true
 //    }
