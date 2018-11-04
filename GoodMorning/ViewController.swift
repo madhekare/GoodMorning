@@ -7,22 +7,27 @@
 //
 
 import UIKit
+import Photos
 import AVFoundation
 import Vision
 
-class ViewController: UIViewController {
-
+class MainViewController: UIViewController {
+    
     @IBOutlet weak var generateButton: UIButton!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var myClosetButton: UIButton!
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var collectionViewFlowLayout: UICollectionViewFlowLayout!
+    
+    fileprivate var photoLibrary: PhotoLibrary!
+    fileprivate var numberOfSections = 0
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-//        setupCaptureSession()
+        
     }
     
-    
+
     @IBAction func didTapGenButton() {
         NSLog("Gen")
     }
@@ -33,6 +38,7 @@ class ViewController: UIViewController {
     @IBAction func didTapMyClosetButton(){
         NSLog("closet")
     }
+
     func setupCaptureSession() {
         
         // creates a new capture session
@@ -64,7 +70,6 @@ class ViewController: UIViewController {
         
         captureSession.startRunning()
         
-
     }
 
 }

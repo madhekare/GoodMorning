@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE862407218E602100418D54 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE862406218E602100418D54 /* CollectionViewCell.swift */; };
+		EE862409218E63FE00418D54 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE862408218E63FE00418D54 /* AddViewController.swift */; };
+		EE86240B218E6AC900418D54 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE86240A218E6AC900418D54 /* CollectionViewCell.xib */; };
+		EE89D48A218E365E00B53EF2 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EE89D489218E365E00B53EF2 /* Inceptionv3.mlmodel */; };
+		EE89D4C6218E4B6200B53EF2 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE89D4C5218E4B6200B53EF2 /* test.swift */; };
+		EE89D4CC218E5CC400B53EF2 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE89D4CB218E5CC400B53EF2 /* PhotoLibrary.swift */; };
 		EF75FB76218E1D6000EDBB52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75FB75218E1D6000EDBB52 /* AppDelegate.swift */; };
 		EF75FB78218E1D6000EDBB52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75FB77218E1D6000EDBB52 /* ViewController.swift */; };
 		EF75FB7B218E1D6000EDBB52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF75FB79218E1D6000EDBB52 /* Main.storyboard */; };
@@ -34,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE862406218E602100418D54 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		EE862408218E63FE00418D54 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		EE86240A218E6AC900418D54 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		EE89D489218E365E00B53EF2 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		EE89D4C5218E4B6200B53EF2 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		EE89D4CB218E5CC400B53EF2 /* PhotoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
 		EF75FB72218E1D6000EDBB52 /* GoodMorning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodMorning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF75FB75218E1D6000EDBB52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF75FB77218E1D6000EDBB52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +93,7 @@
 				EF75FB89218E1D6100EDBB52 /* GoodMorningTests */,
 				EF75FB94218E1D6100EDBB52 /* GoodMorningUITests */,
 				EF75FB73218E1D6000EDBB52 /* Products */,
+				EE89D489218E365E00B53EF2 /* Inceptionv3.mlmodel */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +112,15 @@
 			children = (
 				EF75FB75218E1D6000EDBB52 /* AppDelegate.swift */,
 				EF75FB77218E1D6000EDBB52 /* ViewController.swift */,
+				EE862406218E602100418D54 /* CollectionViewCell.swift */,
+				EE89D4CB218E5CC400B53EF2 /* PhotoLibrary.swift */,
 				EF75FB79218E1D6000EDBB52 /* Main.storyboard */,
+				EE86240A218E6AC900418D54 /* CollectionViewCell.xib */,
+				EE862408218E63FE00418D54 /* AddViewController.swift */,
 				EF75FB7C218E1D6100EDBB52 /* Assets.xcassets */,
 				EF75FB7E218E1D6100EDBB52 /* LaunchScreen.storyboard */,
 				EF75FB81218E1D6100EDBB52 /* Info.plist */,
+				EE89D4C5218E4B6200B53EF2 /* test.swift */,
 			);
 			path = GoodMorning;
 			sourceTree = "<group>";
@@ -231,6 +249,7 @@
 			files = (
 				EF75FB80218E1D6100EDBB52 /* LaunchScreen.storyboard in Resources */,
 				EF75FB7D218E1D6100EDBB52 /* Assets.xcassets in Resources */,
+				EE86240B218E6AC900418D54 /* CollectionViewCell.xib in Resources */,
 				EF75FB7B218E1D6000EDBB52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF75FB78218E1D6000EDBB52 /* ViewController.swift in Sources */,
+				EE89D4C6218E4B6200B53EF2 /* test.swift in Sources */,
+				EE862409218E63FE00418D54 /* AddViewController.swift in Sources */,
+				EE862407218E602100418D54 /* CollectionViewCell.swift in Sources */,
+				EE89D48A218E365E00B53EF2 /* Inceptionv3.mlmodel in Sources */,
+				EE89D4CC218E5CC400B53EF2 /* PhotoLibrary.swift in Sources */,
 				EF75FB76218E1D6000EDBB52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
