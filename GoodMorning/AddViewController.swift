@@ -10,7 +10,8 @@ import UIKit
 import Photos
 
 class AddViewController: UIViewController {
-    
+        
+    @IBOutlet var DismissSwipe: UISwipeGestureRecognizer!
     @IBOutlet weak var addCollectionView: UICollectionView!
     let cellIdentifier = "CollectionViewCell"
     

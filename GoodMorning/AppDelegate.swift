@@ -13,10 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-<<<<<<< HEAD
 
-=======
->>>>>>> f85807a60401b7c419d2ca85d04818faecc6afcb
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
