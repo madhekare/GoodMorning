@@ -20,9 +20,13 @@ class AddViewController: UIViewController {
     }
     let cellIdentifier = "CollectionViewCell"
     
+    
     let numberOfSections = 1
     let collectionViewFlowLayout = UICollectionViewFlowLayout()
     let photoLibrary = PhotoLibrary()
+    var indices = [Int]()
+    
+    static var imgs: [UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +36,8 @@ class AddViewController: UIViewController {
         
         self.addCollectionView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
     }
+    
+
     
     /*
     // MARK: - Navigation
@@ -49,6 +55,35 @@ class AddViewController: UIViewController {
         // when view is about to appear, let's fetch the library and reload the collection view
         photoLibrary.fetchLibrary()
         self.addCollectionView.reloadData()
+    }
+    
+    
+    @IBAction func dismissSelectImage(_ sender: Any) {
+        for i in indices {
+            AddViewController.imgs.append(photoLibrary.images[i])
+        }
+        print(AddViewController.imgs)
+    }
+}
+
+extension AddViewController: UICollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            let imgCell = collectionView.cellForItem(at: indexPath)
+        
+            if !(isSelected(i: indexPath, arr: indices)) {
+                imgCell?.layer.borderColor = UIColor.red.cgColor
+                imgCell?.layer.borderWidth = 4
+                indices.append(indexPath.row)
+            } else {
+                if let index = indices.index(of: indexPath.row) {
+                    indices.remove(at: index)
+                }
+                imgCell?.layer.borderWidth = 0
+            }        
+        }
+    
+    func isSelected(i: IndexPath, arr: [Int]) -> Bool {
+        return arr.contains(i.row)
     }
 }
 
@@ -85,18 +120,5 @@ extension AddViewController: UICollectionViewDelegateFlowLayout
         return CGSize(width: cellLength, height: cellLength)
     }
     
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//        let myCell = cell as! CollectionViewCell
-//        myCell.cellImageView.image = nil
-//        DispatchQueue.global(qos: .background).async {
-//            self.photoLibrary.setPhoto(at: indexPath.row) { image in
-//                if let image = image {
-//                    DispatchQueue.main.async {
-//                        myCell.cellImageView.image = image
-//                    }
-//                }
-//            }
-//        }
-    }
 }
 
