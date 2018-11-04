@@ -26,7 +26,7 @@ class MainViewController: UIViewController {
             _self.libraryAuthorized = (result == .authorized)
         }
     }
-
+    
     @IBAction func didTapGenButton() {
         NSLog("Gen")
     }
