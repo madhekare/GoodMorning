@@ -17,16 +17,15 @@ class MainViewController: UIViewController {
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var myClosetButton: UIButton!
     
-    @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var collectionViewFlowLayout: UICollectionViewFlowLayout!
-    
-    fileprivate var photoLibrary: PhotoLibrary!
-    fileprivate var numberOfSections = 0
+    var libraryAuthorized = false
     
     override func viewDidLoad() {
-        
+        PHPhotoLibrary.requestAuthorization { [weak self] result in
+            // If self is nil somehow, end early
+            guard let _self = self else { return }
+            _self.libraryAuthorized = (result == .authorized)
+        }
     }
-    
 
     @IBAction func didTapGenButton() {
         NSLog("Gen")
@@ -46,8 +45,6 @@ class MainViewController: UIViewController {
         
         // search for available capture devices
         let availableDevices = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: .back).devices
-        
-        
         
         // get capture device, add device input to capture session
         do {
@@ -69,8 +66,15 @@ class MainViewController: UIViewController {
         view.layer.addSublayer(previewLayer)
         
         captureSession.startRunning()
-        
     }
-
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "AddSegue" {
+            // Don't show the add page if library access isn't authorized
+            if !libraryAuthorized { print("BUT NO PHOTO LIBRARY ACCESS") }
+            return libraryAuthorized
+        }
+        return true
+    }
 }
 

@@ -10,7 +10,9 @@ import UIKit
 import Photos
 
 class AddViewController: UIViewController {
+    
     @IBOutlet weak var addCollectionView: UICollectionView!
+    let cellIdentifier = "CollectionViewCell"
     
     let numberOfSections = 1
     let collectionViewFlowLayout = UICollectionViewFlowLayout()
@@ -18,25 +20,12 @@ class AddViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.addCollectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: "CollectionViewCell")
-        
-        PHPhotoLibrary.requestAuthorization { [weak self] result in
-            if let _self = self {
-                if result == .authorized {
-                    DispatchQueue.main.async {
-                        _self.addCollectionView.reloadData()
-                    }
-                }
-            }
-        }
-        
+      
         self.addCollectionView.delegate = self
         self.addCollectionView.dataSource = self
-
-        // Do any additional setup after loading the view.
+        
+        self.addCollectionView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
     }
-    
 
     /*
     // MARK: - Navigation
@@ -47,61 +36,61 @@ class AddViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // when view is about to appear, let's fetch the library and reload the collection view
+        photoLibrary.fetchLibrary()
+        self.addCollectionView.reloadData()
+    }
 }
 
-extension AddViewController: UICollectionViewDataSource {
-    
-    fileprivate var numberOfElementsInRow: Int {
-        return 4
-    }
-    
-    var sizeForCell: CGSize {
-        let _numberOfElementsInRow = CGFloat(numberOfElementsInRow)
-        let allWidthBetwenCells = _numberOfElementsInRow == 0 ? 0 : collectionViewFlowLayout.minimumInteritemSpacing*(_numberOfElementsInRow-1)
-        let width = (addCollectionView.frame.width - allWidthBetwenCells)/_numberOfElementsInRow
-        return CGSize(width: width, height: width)
-    }
-    
-    func initCollectionView() {
-        addCollectionView.dataSource = self
-        addCollectionView.delegate = self
-    }
-    
+extension AddViewController: UICollectionViewDataSource
+{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return numberOfSections
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(photoLibrary.count)
-        return self.photoLibrary.count
+        return photoLibrary.images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
+        // Set the cell's imageView to show image at correct index
+        cell.cellImageView.image = photoLibrary.images[indexPath.row]
         return cell
     }
-    
 }
 
-extension AddViewController: UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return sizeForCell
+fileprivate let numberOfElementsInRow: Int = 4
+fileprivate let cellMargin: CGFloat = 16
+
+extension AddViewController: UICollectionViewDelegateFlowLayout
+{
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        // What's our screen size
+        let viewSize = self.view.bounds.size
+        // Divide evenly and subtract some margin
+        let cellLength = (viewSize.width / CGFloat(numberOfElementsInRow)) - cellMargin
+        return CGSize(width: cellLength, height: cellLength)
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        let myCell = cell as! CollectionViewCell
-        myCell.cellImageView.image = nil
-        DispatchQueue.global(qos: .background).async {
-            self.photoLibrary.setPhoto(at: indexPath.row) { image in
-                if let image = image {
-                    DispatchQueue.main.async {
-                        myCell.cellImageView.image = image
-                    }
-                }
-            }
-        }
+//        let myCell = cell as! CollectionViewCell
+//        myCell.cellImageView.image = nil
+//        DispatchQueue.global(qos: .background).async {
+//            self.photoLibrary.setPhoto(at: indexPath.row) { image in
+//                if let image = image {
+//                    DispatchQueue.main.async {
+//                        myCell.cellImageView.image = image
+//                    }
+//                }
+//            }
+//        }
     }
 }
 

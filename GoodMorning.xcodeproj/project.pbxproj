@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E089FF6218E75C000960AF9 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E089FF5218E75C000960AF9 /* CollectionViewCell.xib */; };
 		EE862407218E602100418D54 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE862406218E602100418D54 /* CollectionViewCell.swift */; };
 		EE862409218E63FE00418D54 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE862408218E63FE00418D54 /* AddViewController.swift */; };
-		EE86240B218E6AC900418D54 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE86240A218E6AC900418D54 /* CollectionViewCell.xib */; };
 		EE89D48A218E365E00B53EF2 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EE89D489218E365E00B53EF2 /* Inceptionv3.mlmodel */; };
 		EE89D4C6218E4B6200B53EF2 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE89D4C5218E4B6200B53EF2 /* test.swift */; };
 		EE89D4CC218E5CC400B53EF2 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE89D4CB218E5CC400B53EF2 /* PhotoLibrary.swift */; };
@@ -40,9 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E089FF5218E75C000960AF9 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		EE862406218E602100418D54 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EE862408218E63FE00418D54 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
-		EE86240A218E6AC900418D54 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		EE89D489218E365E00B53EF2 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		EE89D4C5218E4B6200B53EF2 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		EE89D4CB218E5CC400B53EF2 /* PhotoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
@@ -110,13 +110,13 @@
 		EF75FB74218E1D6000EDBB52 /* GoodMorning */ = {
 			isa = PBXGroup;
 			children = (
+				EF75FB79218E1D6000EDBB52 /* Main.storyboard */,
 				EF75FB75218E1D6000EDBB52 /* AppDelegate.swift */,
 				EF75FB77218E1D6000EDBB52 /* ViewController.swift */,
+				EE862408218E63FE00418D54 /* AddViewController.swift */,
+				4E089FF5218E75C000960AF9 /* CollectionViewCell.xib */,
 				EE862406218E602100418D54 /* CollectionViewCell.swift */,
 				EE89D4CB218E5CC400B53EF2 /* PhotoLibrary.swift */,
-				EF75FB79218E1D6000EDBB52 /* Main.storyboard */,
-				EE86240A218E6AC900418D54 /* CollectionViewCell.xib */,
-				EE862408218E63FE00418D54 /* AddViewController.swift */,
 				EF75FB7C218E1D6100EDBB52 /* Assets.xcassets */,
 				EF75FB7E218E1D6100EDBB52 /* LaunchScreen.storyboard */,
 				EF75FB81218E1D6100EDBB52 /* Info.plist */,
@@ -249,7 +249,7 @@
 			files = (
 				EF75FB80218E1D6100EDBB52 /* LaunchScreen.storyboard in Resources */,
 				EF75FB7D218E1D6100EDBB52 /* Assets.xcassets in Resources */,
-				EE86240B218E6AC900418D54 /* CollectionViewCell.xib in Resources */,
+				4E089FF6218E75C000960AF9 /* CollectionViewCell.xib in Resources */,
 				EF75FB7B218E1D6000EDBB52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,7 +457,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCU34843EL;
 				INFOPLIST_FILE = GoodMorning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,7 +476,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCU34843EL;
 				INFOPLIST_FILE = GoodMorning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
