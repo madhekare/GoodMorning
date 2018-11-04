@@ -11,7 +11,13 @@ import Photos
 
 class AddViewController: UIViewController {
     
+    @IBOutlet weak var dismissButton: UIButton!
+    @IBOutlet var dismissSegue: UISwipeGestureRecognizer!
     @IBOutlet weak var addCollectionView: UICollectionView!
+    
+    @IBAction func didDismisss() {
+        
+    }
     let cellIdentifier = "CollectionViewCell"
     
     let numberOfSections = 1
@@ -26,7 +32,7 @@ class AddViewController: UIViewController {
         
         self.addCollectionView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
     }
-
+    
     /*
     // MARK: - Navigation
 
